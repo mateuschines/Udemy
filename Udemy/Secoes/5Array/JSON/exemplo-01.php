@@ -1,5 +1,6 @@
 <?php
-//Arrays TriDimencional
+
+//Json é a comunicaçao entre arrays de vares liguagens de programaçao
 
 $pessoas = array();
 
@@ -12,10 +13,8 @@ array_push($pessoas, array(
   'nome'=>'Glaucio',
   'idade'=>25
 ));
-
-//ira mostrar o array 0 na posicao nome
-//Resultado na Web: Joao
-print_r($pessoas[0]['nome']);
+//tenho um array e tranformo ele em json para ser enviado
+echo json_encode($pessoas);
 
 
  ?>
